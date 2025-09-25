@@ -41,7 +41,7 @@ const RegisterPage = () => {
       setError("All fields are required and must not be empty.");
       return;
     }
-    if (!formData.fullName || formData.fullName.length < 5) {
+    if (!formData.fullName || formData.fullName.length <= 5) {
       setError("Full Name must be at least 5 characters");
       return;
     }
